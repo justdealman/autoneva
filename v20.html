@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AUTONEVA</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/cusel.css" type="text/css" />
+<link rel="stylesheet" href="css/map.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/cusel-min-2.5.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
+
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){	
+var params = {
+		changedEl: "select"
+	}
+	cuSel(params);
+	
+	$("#scrolly8").mCustomScrollbar({
+		scrollInertia:0,
+		set_height: true
+	});
+});
+
+</script>
+
+<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+
+  <script type="text/javascript">
+        ymaps.ready(init);
+        
+        function init () {
+
+//        var la = decodeURI(document.getElementById('la').value);
+//        var lo = decodeURI(document.getElementById('lo').value);
+
+
+            var myMap = new ymaps.Map('YMapsID_large', {center:[55.76, 37.64], zoom:10});
+  }
+        
+</script>
+
+
+</head>
+
+<body>
+	<div class="root">
+        <div id="YMapsID_large" style="width: 1280px; height: 1280px;"></div>
+    	<div class="contact">
+        	<div class="m_width">
+            	<div class="relative">
+                	<div class="alert">
+                    	<p><img src="images/bg/alert.png" class="f_left" alt="" /> Для того, чтобы увидеть все точки на карте, приблизьте карту над требуемой областью.</p>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <div class="mesto">
+                    	<div class="arr"></div>
+                        <div class="shadow"></div>
+                        <div class="mesto_in">
+                            <p class="title">Рольф Центр</p>
+                            <p><a href="#">Daewoo</a>, <a href="#">Great Wall</a>, <a href="#">ZAZ</a>, <a href="#">Lifan</a>, <a href="#">Geely</a></p>
+                            <table>
+                                <tr>
+                                    <td><img src="images/bg/51.png" alt="" /></td>
+                                    <td>Москва, ул. Кетчерская, 9</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/bg/52.png" alt="" /></td>
+                                    <td>Новогиреево</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/bg/53.png" alt="" /></td>
+                                    <td>(495) 918-77-99<br />(495) 918-78-87</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/bg/54.png" alt="" /></td>
+                                    <td>9:00 - 21:00</td>
+                                </tr>
+                            </table>
+                            <p><a href="#">www.prevox.ru</a></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            	<div class="box">
+                	<div class="logo">
+						<h1><a href="#"><img src="images/bg/logo.png" alt="" width="278" height="35" /></a></h1>
+						<p class="description">Сервис по подбору нового автомобиля</p>
+					</div><!--logo-->
+                    <div class="menu">
+                    	<div class="menu_in">
+                        	<select>
+                            	<option value="1">Санкт-Петербург</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="text_box">
+                    	<p class="title">Автосалоны Ford<br />
+в Санкт-Петербурге</p>
+						<p class="f_right srt"><a href="#" class="all on">все</a> | <a href="#" class="fav">популярные</a></p>
+						<div class="search2">
+                        	<button class="f_right">&nbsp;</button>
+                            <input type="text" value="поиск..." />
+                        </div>
+                        
+                        <div class="clear"></div>
+						<div class="box_in" id="scrolly8">
+							<p class="popular"><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p class="popular"><img src="images/del/25.png" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p class="popular"><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/25.png" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/25.png" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p class="popular"><img src="images/del/25.png" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p class="popular"><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p class="popular"><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/25.png" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p class="popular"><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p class="popular"><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/25.png" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/25.png" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p class="popular"><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p class="popular"><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p class="popular"><img src="images/del/25.png" alt="" /> <a href="#">АвтоПассаж</a></p>	
+                            <p class="popular"><img src="images/del/24.jpg" alt="" /> <a href="#">АвтоПассаж</a></p>		
+						</div>
+                        
+                        <div class="page_navi">
+                            <span class="false">&lt; Назад</span>      
+                            <span class="current">1</span>    
+                            <a href="#">2</a>    <a href="#">3</a>    
+                            <a href="#">...</a>    
+                            <a href="#">9</a>      
+                            <a href="#">Вперед &gt;</a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div><!--root-->
+</body>
+</html>

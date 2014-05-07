@@ -1,0 +1,774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AUTONEVA</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/cusel.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+<script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/jaccounting.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/cusel-min-2.5.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/js_header.js"></script>
+<!--[if IE 7]>
+	<style>
+    	.speedbar span{ position: relative; top:-3px;}
+    </style>		
+<![endif]-->
+</head>
+
+<body>
+	<div class="root">
+    	<div class="scrolltop">
+        	<a href="#">НАВЕРХ</a>
+        </div>
+		<div class="pop">
+			<div class="pop_bg"></div>
+			<div class="pop_rel">
+				<div class="town_box">
+					<a href="javascript:" class="close"></a>
+					<p class="title">Выберете город</p>
+					<table width="100%">
+						<tr>
+							<td>
+								<p class="name">А</p>
+								<div class="list_town">
+									<p><a href="#">Алания (Республика Северная Осетия - Алания)</a></p>
+									<p><a href="#">Алтай (Республика Алтай) — Горно-Алтайск</a></p>
+									<p><a href="#">Алтайский край — Барнаул</a></p>
+									<p><a href="#">Амурская область — Благовещенск</a></p>
+									<p><a href="#">Архангельская область</a></p>
+									<p><a href="#">Астраханская область</a></p>
+								</div>
+								<p class="name">Б</p>
+								<div class="list_town">
+									<p><a href="#">Башкортостан (Республика Башкортостан) — Уфа</a></p>
+									<p><a href="#">Белгородская область</a></p>
+									<p><a href="#">Брянская область</a></p>
+									<p><a href="#">Бурятия (Республика Бурятия) — Улан-Удэ</a></p>
+								</div>
+								<p class="name">В</p>
+								<div class="list_town">
+									<p><a href="#">Владимирская область</a></p>
+									<p><a href="#">Волгоградская область</a></p>
+									<p><a href="#">Вологодская область</a></p>
+									<p><a href="#">Воронежская область</a></p>
+								</div>
+							</td>
+							<td>
+								<p class="name">К</p>
+								<div class="list_town">
+									<p><a href="#">Кабардино-Балкарская Республика — Нальчик</a></p>
+									<p><a href="3">Калининградская область</a></p>
+									<p><a href="#">Калмыкия (Республика Калмыкия) — Элиста</a></p>
+									<p><a href="#">Калужская область</a></p>
+									<p><a href="#">Камчатский край — Петропавловск-Камчатский</a></p>
+									<p><a href="#">Карачаево-Черкесская Республика — Черкесск</a></p>
+									<p><a href="#">Карелия (Республика Карелия) — Петрозаводск</a></p>
+									<p><a href="#">Кемеровская область</a></p>
+									<p><a href="#">Кировская область</a></p>
+									<p><a href="#">Коми (Республика Коми) — Сыктывкар</a></p>
+									<p><a href="#">Костромская область</a></p>
+									<p><a href="#">Краснодарский край</a></p>
+									<p><a href="#">Красноярский край — Красноярск</a></p>
+									<p><a href="#">Красноярский край — Норильск</a></p>
+									<p><a href="#">Курганская область</a></p>
+									<p><a href="#">Курская область</a></p>
+								</div>
+							</td>
+							<td>
+								<p class="name">С</p>
+								<div class="list_town">
+									<p><a href="#">Самарская область</a></p>
+									<p><a href="#">Санкт-Петербург, Ленинградская область</a></p>
+									<p><a href="#">Саратовская область</a></p>
+									<p><a href="#">Саха (Якутия) (Республика Саха (Якутия)) — Якутск</a></p>
+									<p><a href="#">Сахалинская область — Южно-Сахалинск</a></p>
+									<p><a href="#">Свердловская область — Екатеринбург</a></p>
+									<p><a href="#">Смоленская область</a></p>
+									<p><a href="#">Ставропольский край</a></p>
+								</div>
+								<p class="name">Т</p>
+								<div class="list_town">
+									<p><a href="#">Тамбовская область</a></p>
+									<p><a href="#">Татарстан (Республика Татарстан) — Казань</a></p>
+									<p><a href="#">Тверская область</a></p>
+									<p><a href="#">Томская область</a></p>
+									<p><a href="#">Тульская область</a></p>
+									<p><a href="#">Тыва (Республика Тыва) — Кызыл</a></p>
+									<p><a href="#">Тюменская область</a></p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div><!--town_box-->
+				<div class="login_box">
+					<a href="javascript:" class="close"></a>
+					<p class="title">Авторизация</p>
+					<table width="100%">
+						<tr>
+							<td>Логин:</td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td>Пароль:</td>
+							<td><input type="text" /></td>
+						</tr>
+					</table>
+					<p class="log"><a href="#">Забыли пароль</a><span><img src="images/bg/bdr.png" alt="" /></span><input type="submit" value="Войти" /></p>
+				</div><!--login_box-->
+				<div class="models">
+					<a href="javascript:" class="close"></a>
+					<p class="title">Быстрый выбор модели</p>
+					<div class="box">
+						<div class="list">
+							<div class="col_in">
+								<p class="name">Производитель</p>
+								<table width="100%">
+									<tr>
+										<td>
+											<p><a href="#">ACURA</a></p>
+											<p><a href="#">DAEWOO</a></p>
+											<p><a href="#">INFINITI</a></p>
+											<p><a href="#" class="current">CHEVROLET</a></p>
+											<p><a href="#">SEAT</a></p>
+											<p><a href="#">ALFA ROMEO</a></p>
+											<p><a href="#">DAIHATSU</a></p>
+											<p><a href="#">IRAN KHODRO</a></p>
+											<p><a href="#">MERCURYSKODA</a></p>
+											<p><a href="#">ASTON MARTIN</a></p>
+											<p><a href="#">DODGE</a></p>
+											<p><a href="#">ISUZU</a></p>
+											<p><a href="#">MG</a></p>
+											<p><a href="#">SMA</a></p>
+											<p><a href="#">AUDI</a></p>
+											<p><a href="#">FAW</a></p>
+											<p><a href="#">JAC</a></p>
+											<p><a href="#">MINI</a></p>
+											<p><a href="#">SMART</a></p>
+											<p><a href="#">BMW</a></p>
+											<p><a href="#">FIAT</a></p>
+											<p><a href="#">JAGUAR</a></p>
+										</td>
+										<td>
+											<p><a href="#">MITSUBISHI</a></p>
+											<p><a href="#">SSANG YONG</a></p>
+											<p><a href="#">BRILLIANCE</a></p>
+											<p><a href="#">FORD</a></p>
+											<p><a href="#">JEEP</a></p>
+											<p><a href="#">NISSAN</a></p>
+											<p><a href="#">SUBARU</a></p>
+											<p><a href="#">BYD</a></p>
+											<p><a href="#">GEELY</a></p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="list2">
+							<div class="col_in">
+								<p class="name">Модели CHEVROLET</p>
+								<table width="100%">
+									<tr>
+										<td>
+											<p><a href="#">ALERO</a></p>
+											<p><a href="#">CLASSIC</a></p>
+											<p><a href="#">LUMINA</a></p>
+											<p><a href="#">SSR</a></p>
+											<p><a href="#">ASTRA</a></p>
+											<p><a href="#">COBALT</a></p>
+											<p><a href="#">LUV</a></p>
+											<p><a href="#">D-MAX</a></p>
+											<p><a href="#">STARCRAFT</a></p>
+											<p><a href="#">ASTRO</a></p>
+											<p><a href="#">MONTE CARLO</a></p>
+											<p><a href="#">ISUZU</a></p>
+											<p><a href="#">MG</a></p>
+											<p><a href="#">SMA</a></p>
+											<p><a href="#">AUDI</a></p>
+											<p><a href="#">FAW</a></p>
+											<p><a href="#">JAC</a></p>
+											<p><a href="#">MINI</a></p>
+											<p><a href="#">SMART</a></p>
+											<p><a href="#">BMW</a></p>
+											<p><a href="#">FIAT</a></p>
+											<p><a href="#">JAGUAR</a></p>
+										</td>
+										<td>
+											<p><a href="#">MITSUBISHI</a></p>
+											<p><a href="#">SSANG YONG</a></p>
+											<p><a href="#">BRILLIANCE</a></p>
+											<p><a href="#">FORD</a></p>
+											<p><a href="#">JEEP</a></p>
+											<p><a href="#">NISSAN</a></p>
+											<p><a href="#">SUBARU</a></p>
+											<p><a href="#">BYD</a></p>
+											<p><a href="#">GEELY</a></p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div><!--models-->
+			</div>
+		</div><!--pop-->
+		<div class="head">
+			<div class="top_line">
+				<div class="max_width">
+					<div class="in">
+						<div class="language">
+							<a href="#" class="active"><img src="images/bg/flag1.png" alt="" width="21" height="12" /></a>
+							<a href="#"><img src="images/bg/flag2.png" alt="" width="21" height="12" /></a>
+							<a href="#"><img src="images/bg/flag3.png" alt="" width="21" height="12" /></a>
+						</div>
+						<div class="town">
+							<a href="javascript:">Санкт-Петербург</a>
+						</div>
+						<div class="login">
+							<a href="javascript:" id="log">Авторизация</a> <img src="images/bg/bdr.png" alt="" /> <a href="#">Регистрация</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div><!--top_line-->
+			<div class="max_width">
+				<div class="head_under">
+					<div class="logo">
+						<h1><a href="#"><img src="images/bg/logo.png" alt="" width="278" height="35" /></a></h1>
+						<p class="description">Сервис по подбору нового автомобиля</p>
+					</div><!--logo-->
+					<div class="head_right">
+						<div class="col_in">
+							<p class="social">
+								<a href="#"><img src="images/bg/soc4.png" alt="" width="26" height="26" /></a>
+                                <a href="#"><img src="images/bg/soc1.png" alt="" width="26" height="26" /></a>
+								<a href="#"><img src="images/bg/soc2.png" alt="" width="26" height="26" /></a>
+								<a href="#"><img src="images/bg/soc3.png" alt="" width="26" height="26" /></a>
+							</p>
+							<div class="search">
+								<button>&nbsp;</button>
+								<input type="text" value="поиск..." />
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div><!--head_right-->
+					<div class="clear"></div>
+				</div><!--head_under-->
+				<div class="menu">
+					<div class="menu_in">
+						<table>
+							<tr>
+								<td><a href="#">Авто</a></td>
+								<td>
+									<div class="sub">
+										<div class="submenu">
+											<p><a href="#">Новости сайта</a></p>
+											<p><a href="#">Новости автосалонов</a></p>
+											<p><a href="#">Акции автосалонов</a></p>
+											<p><a href="#">Ожидаемые новинкки</a></p>
+										</div>
+									</div>
+									<a href="#" class="current">Новости</a>
+								</td>
+								<td><a href="#">Отзывы</a></td>
+								<td><a href="#">Автосалоны</a></td>
+								<td><a href="#">Общение	</a></td>
+								<td><a href="#">Больше</a></td>
+							</tr>
+						</table>
+					</div>
+				</div><!--menu-->
+			</div>
+		</div><!--head-->
+		
+		<div class="max_width">
+			
+			<div class="main">
+				<div class="right_col">
+					<div class="col_in">
+						
+						<div class="link_selection">
+							<a href="javascript:">БЫСТРЫЙ<br />ВЫБОР МОДЕЛИ</a>
+						</div><!--link_selection-->
+						
+						<div class="text_box">
+							<p class="title">Реклама</p>
+							<div>
+								
+							</div>
+						</div>
+						
+						<div class="text_box">
+							<p class="title">Последнее в блогах</p>
+							<div class="box_in" id="scrolly1">
+								<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div>
+							</div>
+							<div class="more">
+								<a href="#">blogs.autoneva.ru</a>
+							</div>
+						</div><!--text_box-->
+						
+						<div class="text_box">
+							<p class="title">Последнее на форуме</p>
+							<div class="box_in" id="scrolly2">
+								<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div>
+							</div>
+							<div class="more">
+								<a href="#">forum.autoneva.ru</a>
+							</div>
+						</div><!--text_box-->
+						
+						<div class="text_widget">
+							<p class="title">О проекте</p>
+							<p>Сегодня в России свои новые модели представляют более 50 зарубежных и отечественных производителей. Количество моделей исчисляется уже несколькими сотнями. А если учесть, что каждая модель может иметь несколько вариантов комплектаций, то выбор «автомобиля для себя» становится задачей чрезвычайно сложной, отнимающей много времени. Цель нашего сайта — максимально упростить эту задачу.</p>
+							<p>На этом сайте вы найдете все новые модели автомобилей, представленные на российском рынке. В поисковой системе заложено более 80 параметров, которые помогут вам найти все предложения производителей, соответствующие вашим требованиям к автомобилю.</p>
+						</div><!--text_widget-->
+						
+					</div>
+				</div><!--right_col-->
+				<div class="left_col">
+					<div class="col_in">
+						<div class="speedbar">
+                            <a href="#" class="back">Назад</a> <span class="bdr"></span> <a href="#">Главная</a> <span></span> <a href="#">Новости о новинках</a>
+                        </div>
+						
+                        <div class="search_box">
+							<div class="filter">
+                            	<div class="col_in">
+                                	<p class="title">Поиск автосалонов</p>
+                                    <div class="filter_box">
+                                    	<p class="name"><a href="javascript:">Параметр поиска один</a></p>
+                                        <div class="filt forms">
+                                        	<form>
+                                        	<p><a href="#" class="metro f_right"><img src="images/bg/metro.png" alt="" /></a>Выбор метро</p>
+                                            <p><select style="width:100%"><option value="1">Выбрать</option></select></p>
+                                            <p><br /></p>
+                                            <p>Свободный поиск</p>
+                                            <p><input type="text" value="Выбрать" /></p>
+                                            <p class="reset"><input type="reset" value="очистить" /></p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="filter_box">
+                                    	<a href="#" class="f_right"><img src="images/bg/qt.png" alt="" /></a>
+                                    	<p class="name"><a href="javascript:">Параметр поиска два</a></p>
+                                        <div class="filt forms">
+                                        	<form>
+                                        	<p>Выбор параметров</p>
+                                            <p><input type="checkbox" checked="checked" /> Параметр 1</p>
+                                            <p><input type="checkbox" /> Параметр 2</p>
+                                            <p><input type="checkbox" /> Параметр 3</p>
+                                            <p class="reset"><input type="reset" value="очистить" /></p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="filter_box">
+                                    	<p class="name"><a href="javascript:">Параметр поиска три</a></p>
+                                        <div class="filt forms">
+                                        	<form>
+                                        	<p>Выбор параметров</p>
+                                            <p><input type="checkbox" checked="checked" /> Параметр 1</p>
+                                            <p><input type="checkbox" /> Параметр 2</p>
+                                            <p><input type="checkbox" /> Параметр 3</p>
+                                            <p class="reset"><input type="reset" value="очистить" /></p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="filter_box">
+                                    	<p class="name"><a href="javascript:">Параметр поиска четыре</a></p>
+                                        <div class="filt forms">
+                                        	<form>
+                                            <p>Выбор модели<br /><span class="low">Выбрано  2  модели</span></p>
+                                            <p><select size="5" multiple="multiple">
+                                            	<option value="1">Lifan </option>
+                                                <option value="2">Mazda</option> 
+                                                <option value="3">Mazda</option> 
+                                                <option value="4">Mazda</option> 
+                                                <option value="5">Mazda</option> 
+                                                <option value="6">Mazda</option>
+											</select></p>
+                                            <p class="reset"><input type="reset" value="очистить" /></p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="filter_box result">
+                                    	<div class="used">
+                                            <a href="#"><span>Найден<br />автосалонов</span><span class="num">89</span></a>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <p class="reset"><input type="reset" value="очистить" /></p>
+                                    </div>
+                                </div>
+                            </div><!--filter-->
+                            
+                            <div class="result_search">
+                            	<div class="col_in">
+                                
+                                	<p class="title">Найдено автосалонов Kia: 15</p>
+                                	<div class="sort">
+                                    	<div class="map_link"><a href="#"><span>Автосалоны на карте</span></a></div>
+                                    	<p>Сортировка по:   <a href="#">названию</a>  <span></span> <a href="#" class="curr">рейтингу</a> </p>
+                                    </div>
+                                    <div class="result_item">
+                                    	<p class="name"><a href="#">ПРЕВОКС</a></p>
+                                        <p class="f_right">
+                                            <span class="comment_num"><a href="#">12</a></span> <span class="bdr">|</span> <span class="rate"><a href="#">+7</a></span>
+                                        </p>
+                                        <p class="tags"><a href="#">Daewoo</a>, <a href="#">Great Wall</a>, <a href="#">ZAZ</a>, <a href="#">Lifan</a>, <a href="#">Geely</a></p>
+                                        <table width="100%">
+                                        	<tr>
+                                            	<td>
+                                                	<div class="item">
+                                                    	<p class="in"><strong>Адрес:</strong></p>
+                                                        <p>Москва, ул. Кетчерская, 9</p>
+                                                    </div>
+                                                    <div class="item">
+                                                    	<p class="in"><strong>Метро:</strong></p>
+                                                        <p>Новогиреево</p>
+                                                    </div>
+                                                   	<p><a href="#">www.prevox.ru</a></p>
+                                                </td>
+                                                <td class="last">
+                                                	<div class="item">
+                                                    	<p class="in"><strong>Телефон:</strong></p>
+                                                        <p>(495) 918-77-99<br />(495) 918-78-87</p>
+                                                    </div>
+                                                    <div class="item">
+                                                    	<p class="in"><strong>Время работы:</strong></p>
+                                                        <p>Время работы:</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="result_item">
+                                    	<p class="name"><a href="#">ПРЕВОКС</a></p>
+                                        <p class="f_right">
+                                            <span class="comment_num"><a href="#">12</a></span> <span class="bdr">|</span> <span class="rate"><a href="#">+7</a></span>
+                                        </p>
+                                        <p class="tags"><a href="#">Daewoo</a>, <a href="#">Great Wall</a>, <a href="#">ZAZ</a>, <a href="#">Lifan</a>, <a href="#">Geely</a></p>
+                                        <table width="100%">
+                                        	<tr>
+                                            	<td>
+                                                	<div class="item">
+                                                    	<p class="in"><strong>Адрес:</strong></p>
+                                                        <p>Москва, ул. Кетчерская, 9</p>
+                                                    </div>
+                                                    <div class="item">
+                                                    	<p class="in"><strong>Метро:</strong></p>
+                                                        <p>Новогиреево</p>
+                                                    </div>
+                                                   	<p><a href="#">www.prevox.ru</a></p>
+                                                </td>
+                                                <td class="last">
+                                                	<div class="item">
+                                                    	<p class="in"><strong>Телефон:</strong></p>
+                                                        <p>(495) 918-77-99<br />(495) 918-78-87</p>
+                                                    </div>
+                                                    <div class="item">
+                                                    	<p class="in"><strong>Время работы:</strong></p>
+                                                        <p>Время работы:</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="banner"><img src="images/del/banner.jpg" alt="" /></div>
+                                    
+                                    <div class="result_item">
+                                    	<p class="name"><a href="#">ПРЕВОКС</a></p>
+                                        <p class="f_right">
+                                            <span class="comment_num"><a href="#">12</a></span> <span class="bdr">|</span> <span class="rate"><a href="#">+7</a></span>
+                                        </p>
+                                        <p class="tags"><a href="#">Daewoo</a>, <a href="#">Great Wall</a>, <a href="#">ZAZ</a>, <a href="#">Lifan</a>, <a href="#">Geely</a></p>
+                                        <table width="100%">
+                                        	<tr>
+                                            	<td>
+                                                	<div class="item">
+                                                    	<p class="in"><strong>Адрес:</strong></p>
+                                                        <p>Москва, ул. Кетчерская, 9</p>
+                                                    </div>
+                                                    <div class="item">
+                                                    	<p class="in"><strong>Метро:</strong></p>
+                                                        <p>Новогиреево</p>
+                                                    </div>
+                                                   	<p><a href="#">www.prevox.ru</a></p>
+                                                </td>
+                                                <td class="last">
+                                                	<div class="item">
+                                                    	<p class="in"><strong>Телефон:</strong></p>
+                                                        <p>(495) 918-77-99<br />(495) 918-78-87</p>
+                                                    </div>
+                                                    <div class="item">
+                                                    	<p class="in"><strong>Время работы:</strong></p>
+                                                        <p>Время работы:</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="result_item">
+                                    	<p class="name"><a href="#">ПРЕВОКС</a></p>
+                                        <p class="f_right">
+                                            <span class="comment_num"><a href="#">12</a></span> <span class="bdr">|</span> <span class="rate"><a href="#">+7</a></span>
+                                        </p>
+                                        <p class="tags"><a href="#">Daewoo</a>, <a href="#">Great Wall</a>, <a href="#">ZAZ</a>, <a href="#">Lifan</a>, <a href="#">Geely</a></p>
+                                        <table width="100%">
+                                        	<tr>
+                                            	<td>
+                                                	<div class="item">
+                                                    	<p class="in"><strong>Адрес:</strong></p>
+                                                        <p>Москва, ул. Кетчерская, 9</p>
+                                                    </div>
+                                                    <div class="item">
+                                                    	<p class="in"><strong>Метро:</strong></p>
+                                                        <p>Новогиреево</p>
+                                                    </div>
+                                                   	<p><a href="#">www.prevox.ru</a></p>
+                                                </td>
+                                                <td class="last">
+                                                	<div class="item">
+                                                    	<p class="in"><strong>Телефон:</strong></p>
+                                                        <p>(495) 918-77-99<br />(495) 918-78-87</p>
+                                                    </div>
+                                                    <div class="item">
+                                                    	<p class="in"><strong>Время работы:</strong></p>
+                                                        <p>Время работы:</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="result_item">
+                                    	<p class="name"><a href="#">ПРЕВОКС</a></p>
+                                        <p class="f_right">
+                                            <span class="comment_num"><a href="#">12</a></span> <span class="bdr">|</span> <span class="rate"><a href="#">+7</a></span>
+                                        </p>
+                                        <p class="tags"><a href="#">Daewoo</a>, <a href="#">Great Wall</a>, <a href="#">ZAZ</a>, <a href="#">Lifan</a>, <a href="#">Geely</a></p>
+                                        <table width="100%">
+                                        	<tr>
+                                            	<td>
+                                                	<div class="item">
+                                                    	<p class="in"><strong>Адрес:</strong></p>
+                                                        <p>Москва, ул. Кетчерская, 9</p>
+                                                    </div>
+                                                    <div class="item">
+                                                    	<p class="in"><strong>Метро:</strong></p>
+                                                        <p>Новогиреево</p>
+                                                    </div>
+                                                   	<p><a href="#">www.prevox.ru</a></p>
+                                                </td>
+                                                <td class="last">
+                                                	<div class="item">
+                                                    	<p class="in"><strong>Телефон:</strong></p>
+                                                        <p>(495) 918-77-99<br />(495) 918-78-87</p>
+                                                    </div>
+                                                    <div class="item">
+                                                    	<p class="in"><strong>Время работы:</strong></p>
+                                                        <p>Время работы:</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="page_navi rev">
+                                        <a href="#" class="prev">Назад</a>  <span class="current">1</span>    
+                                        <a href="#">2</a>    <a href="#">3</a>    <a href="#">4</a>    <a href="#">5</a>    
+                                        <span>...</span>    
+                                        <a href="#">45</a>      
+                                        <a href="#" class="next">Вперед</a>
+                                    </div>	
+                                    
+                                     <div class="banner"><img src="images/del/banner.jpg" alt="" /></div>	
+                                </div>
+                            </div><!--result_search-->
+                            
+                            <div class="clear"></div>
+						</div>
+						
+						
+						
+						
+						
+						
+						
+						<div class="clear"></div>
+						
+						<!--text_box-->
+						
+						
+                        
+                        
+						
+                        
+						
+						
+					</div>
+				</div><!--left_col-->
+				<div class="clear"></div>
+			</div><!--main-->
+			
+		</div>
+		
+		<div class="vote"></div>
+	</div><!--root-->
+	<div class="footer">
+		<div class="max_width">
+			<div class="foot_in">
+				<table width="100%">
+					<tr>
+						<th>Автомобили</th>
+						<th>Адреса</th>
+						<th>Новое</th>
+						<th>Автонева</th>
+						<th><a href="#"><img src="images/bg/foot_logo.png" alt="" width="162" height="20" /></a></th>
+					</tr>
+					<tr>
+						<td>
+							<p><a href="#">Рейтинг автомобилей</a></p>
+							<p><a href="#">Новые автомобили</a></p>
+							<p><a href="#">Ожидаемые новинки</a></p>
+							<p><a href="#">Концепт-кары</a></p>
+							<p><a href="#">Глоссарий</a></p>
+							<p><a href="#">Вопрос - Ответ</a></p>
+						</td>
+						<td>
+							<p><a href="#">Автосалоны</a></p>
+							<p><a href="#">Автошколы</a></p>
+							<p><a href="#">Автоклубы</a></p>
+							<p><a href="#">Страховые компании</a></p>
+						</td>
+						<td>
+							<p><a href="#">Твиттер новости</a></p>
+							<p><a href="#">Новости о новинках</a></p>
+							<p><a href="#">Акции автосалонов</a></p>
+							<p><a href="#">Новости автосалонов</a></p>
+							<p><a href="#">Блоги</a></p>
+							<p><a href="#">Видео</a></p>
+						</td>
+						<td>
+							<p><a href="#">Для представителей</a></p>
+							<p><a href="#">Новости сайта</a></p>
+							<p><a href="#">Наши акции</a></p>
+							<p><a href="#">Реклама</a></p>
+							<p><a href="#">О проекте</a></p>
+							<p><a href="#">Контакты</a></p>
+						</td>
+						<td>
+							<p><a href="#">Реклама на сайте</a></p>
+							<p><a href="#">О проекте</a></p>
+							<p><a href="#">Контакты</a></p>
+						</td>
+					</tr>
+				</table>
+			</div><!--foot_in-->
+			
+			<div class="foot_left">
+				<div class="col_in">
+					<p>© 2008 - 2012 AutoNeva.ru</p>
+				</div>
+			</div><!--foot_left-->
+			<div class="foot_right">
+				<div class="col_in">
+					<div class="counter">
+						<a href="#"><img src="images/del/counter1.png" alt="" /></a>
+						<a href="#"><img src="images/del/counter2.png" alt="" /></a>
+						<a href="#"><img src="images/del/counter3.png" alt="" /></a>
+						<a href="#"><img src="images/del/counter4.png" alt="" /></a>
+					</div>
+				</div>
+			</div><!--foot_right-->
+			<div class="clear"></div>
+		</div>
+	</div><!--footer-->
+</body>
+</html>

@@ -1,0 +1,1127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AUTONEVA</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+<script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/jaccounting.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+// Initially set opacity on thumbs and add
+				// additional styling for hover effect on thumbs
+				var onMouseOutOpacity = 0.67;
+				$('#thumbs ul.thumbs li').opacityrollover({
+					mouseOutOpacity:   onMouseOutOpacity,
+					mouseOverOpacity:  1.0,
+					fadeSpeed:         'fast',
+					exemptionSelector: '.selected'
+				});
+				
+				// Initialize Advanced Galleriffic Gallery
+				var gallery = $('#thumbs').galleriffic({
+					delay:                     2500,
+					numThumbs:                 6,
+					preloadAhead:              10,
+					enableTopPager:            false,
+					enableBottomPager:         true,
+					maxPagesToShow:            7,
+					imageContainerSel:         '#slideshow',
+					controlsContainerSel:      '#controls',
+					captionContainerSel:       '#caption',
+					loadingContainerSel:       '#loading',
+					renderSSControls:          false,
+					renderNavControls:         true,
+					nextPageLinkText:          'Next &rsaquo;',
+					prevPageLinkText:          '&lsaquo; Prev',
+					enableHistory:             false,
+					autoStart:                 false,
+					syncTransitions:           true,
+					defaultTransitionDuration: 900,
+					onSlideChange:             function(prevIndex, nextIndex) {
+						// 'this' refers to the gallery, which is an extension of $('#thumbs')
+						this.find('ul.thumbs').children()
+							.eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+							.eq(nextIndex).fadeTo('fast', 1.0);
+					},
+					onPageTransitionOut:       function(callback) {
+						this.fadeTo('fast', 0.0, callback);
+					},
+					onPageTransitionIn:        function() {
+						this.fadeTo('fast', 1.0);
+					}
+				});
+});
+</script>
+<script type="text/javascript" src="js/js_header.js"></script>
+<!--[if IE 7]>
+	<style>
+    	.speedbar span{ position: relative; top:-3px;}
+    </style>		
+<![endif]-->
+</head>
+
+<body>
+	<div class="root">
+    	<div class="scrolltop">
+        	<a href="#">НАВЕРХ</a>
+        </div>
+		<div class="pop">
+			<div class="pop_bg"></div>
+			<div class="pop_rel">
+				<div class="town_box">
+					<a href="javascript:" class="close"></a>
+					<p class="title">Выберете город</p>
+					<table width="100%">
+						<tr>
+							<td>
+								<p class="name">А</p>
+								<div class="list_town">
+									<p><a href="#">Алания (Республика Северная Осетия - Алания)</a></p>
+									<p><a href="#">Алтай (Республика Алтай) — Горно-Алтайск</a></p>
+									<p><a href="#">Алтайский край — Барнаул</a></p>
+									<p><a href="#">Амурская область — Благовещенск</a></p>
+									<p><a href="#">Архангельская область</a></p>
+									<p><a href="#">Астраханская область</a></p>
+								</div>
+								<p class="name">Б</p>
+								<div class="list_town">
+									<p><a href="#">Башкортостан (Республика Башкортостан) — Уфа</a></p>
+									<p><a href="#">Белгородская область</a></p>
+									<p><a href="#">Брянская область</a></p>
+									<p><a href="#">Бурятия (Республика Бурятия) — Улан-Удэ</a></p>
+								</div>
+								<p class="name">В</p>
+								<div class="list_town">
+									<p><a href="#">Владимирская область</a></p>
+									<p><a href="#">Волгоградская область</a></p>
+									<p><a href="#">Вологодская область</a></p>
+									<p><a href="#">Воронежская область</a></p>
+								</div>
+							</td>
+							<td>
+								<p class="name">К</p>
+								<div class="list_town">
+									<p><a href="#">Кабардино-Балкарская Республика — Нальчик</a></p>
+									<p><a href="3">Калининградская область</a></p>
+									<p><a href="#">Калмыкия (Республика Калмыкия) — Элиста</a></p>
+									<p><a href="#">Калужская область</a></p>
+									<p><a href="#">Камчатский край — Петропавловск-Камчатский</a></p>
+									<p><a href="#">Карачаево-Черкесская Республика — Черкесск</a></p>
+									<p><a href="#">Карелия (Республика Карелия) — Петрозаводск</a></p>
+									<p><a href="#">Кемеровская область</a></p>
+									<p><a href="#">Кировская область</a></p>
+									<p><a href="#">Коми (Республика Коми) — Сыктывкар</a></p>
+									<p><a href="#">Костромская область</a></p>
+									<p><a href="#">Краснодарский край</a></p>
+									<p><a href="#">Красноярский край — Красноярск</a></p>
+									<p><a href="#">Красноярский край — Норильск</a></p>
+									<p><a href="#">Курганская область</a></p>
+									<p><a href="#">Курская область</a></p>
+								</div>
+							</td>
+							<td>
+								<p class="name">С</p>
+								<div class="list_town">
+									<p><a href="#">Самарская область</a></p>
+									<p><a href="#">Санкт-Петербург, Ленинградская область</a></p>
+									<p><a href="#">Саратовская область</a></p>
+									<p><a href="#">Саха (Якутия) (Республика Саха (Якутия)) — Якутск</a></p>
+									<p><a href="#">Сахалинская область — Южно-Сахалинск</a></p>
+									<p><a href="#">Свердловская область — Екатеринбург</a></p>
+									<p><a href="#">Смоленская область</a></p>
+									<p><a href="#">Ставропольский край</a></p>
+								</div>
+								<p class="name">Т</p>
+								<div class="list_town">
+									<p><a href="#">Тамбовская область</a></p>
+									<p><a href="#">Татарстан (Республика Татарстан) — Казань</a></p>
+									<p><a href="#">Тверская область</a></p>
+									<p><a href="#">Томская область</a></p>
+									<p><a href="#">Тульская область</a></p>
+									<p><a href="#">Тыва (Республика Тыва) — Кызыл</a></p>
+									<p><a href="#">Тюменская область</a></p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div><!--town_box-->
+				<div class="login_box">
+					<a href="javascript:" class="close"></a>
+					<p class="title">Авторизация</p>
+					<table width="100%">
+						<tr>
+							<td>Логин:</td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td>Пароль:</td>
+							<td><input type="text" /></td>
+						</tr>
+					</table>
+					<p class="log"><a href="#">Забыли пароль</a><span><img src="images/bg/bdr.png" alt="" /></span><input type="submit" value="Войти" /></p>
+				</div><!--login_box-->
+				<div class="models">
+					<a href="javascript:" class="close"></a>
+					<p class="title">Быстрый выбор модели</p>
+					<div class="box">
+						<div class="list">
+							<div class="col_in">
+								<p class="name">Производитель</p>
+								<table width="100%">
+									<tr>
+										<td>
+											<p><a href="#">ACURA</a></p>
+											<p><a href="#">DAEWOO</a></p>
+											<p><a href="#">INFINITI</a></p>
+											<p><a href="#" class="current">CHEVROLET</a></p>
+											<p><a href="#">SEAT</a></p>
+											<p><a href="#">ALFA ROMEO</a></p>
+											<p><a href="#">DAIHATSU</a></p>
+											<p><a href="#">IRAN KHODRO</a></p>
+											<p><a href="#">MERCURYSKODA</a></p>
+											<p><a href="#">ASTON MARTIN</a></p>
+											<p><a href="#">DODGE</a></p>
+											<p><a href="#">ISUZU</a></p>
+											<p><a href="#">MG</a></p>
+											<p><a href="#">SMA</a></p>
+											<p><a href="#">AUDI</a></p>
+											<p><a href="#">FAW</a></p>
+											<p><a href="#">JAC</a></p>
+											<p><a href="#">MINI</a></p>
+											<p><a href="#">SMART</a></p>
+											<p><a href="#">BMW</a></p>
+											<p><a href="#">FIAT</a></p>
+											<p><a href="#">JAGUAR</a></p>
+										</td>
+										<td>
+											<p><a href="#">MITSUBISHI</a></p>
+											<p><a href="#">SSANG YONG</a></p>
+											<p><a href="#">BRILLIANCE</a></p>
+											<p><a href="#">FORD</a></p>
+											<p><a href="#">JEEP</a></p>
+											<p><a href="#">NISSAN</a></p>
+											<p><a href="#">SUBARU</a></p>
+											<p><a href="#">BYD</a></p>
+											<p><a href="#">GEELY</a></p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="list2">
+							<div class="col_in">
+								<p class="name">Модели CHEVROLET</p>
+								<table width="100%">
+									<tr>
+										<td>
+											<p><a href="#">ALERO</a></p>
+											<p><a href="#">CLASSIC</a></p>
+											<p><a href="#">LUMINA</a></p>
+											<p><a href="#">SSR</a></p>
+											<p><a href="#">ASTRA</a></p>
+											<p><a href="#">COBALT</a></p>
+											<p><a href="#">LUV</a></p>
+											<p><a href="#">D-MAX</a></p>
+											<p><a href="#">STARCRAFT</a></p>
+											<p><a href="#">ASTRO</a></p>
+											<p><a href="#">MONTE CARLO</a></p>
+											<p><a href="#">ISUZU</a></p>
+											<p><a href="#">MG</a></p>
+											<p><a href="#">SMA</a></p>
+											<p><a href="#">AUDI</a></p>
+											<p><a href="#">FAW</a></p>
+											<p><a href="#">JAC</a></p>
+											<p><a href="#">MINI</a></p>
+											<p><a href="#">SMART</a></p>
+											<p><a href="#">BMW</a></p>
+											<p><a href="#">FIAT</a></p>
+											<p><a href="#">JAGUAR</a></p>
+										</td>
+										<td>
+											<p><a href="#">MITSUBISHI</a></p>
+											<p><a href="#">SSANG YONG</a></p>
+											<p><a href="#">BRILLIANCE</a></p>
+											<p><a href="#">FORD</a></p>
+											<p><a href="#">JEEP</a></p>
+											<p><a href="#">NISSAN</a></p>
+											<p><a href="#">SUBARU</a></p>
+											<p><a href="#">BYD</a></p>
+											<p><a href="#">GEELY</a></p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div><!--models-->
+			</div>
+		</div><!--pop-->
+		<div class="head">
+			<div class="top_line">
+				<div class="max_width">
+					<div class="in">
+						<div class="language">
+							<a href="#" class="active"><img src="images/bg/flag1.png" alt="" width="21" height="12" /></a>
+							<a href="#"><img src="images/bg/flag2.png" alt="" width="21" height="12" /></a>
+							<a href="#"><img src="images/bg/flag3.png" alt="" width="21" height="12" /></a>
+						</div>
+						<div class="town">
+							<a href="javascript:">Санкт-Петербург</a>
+						</div>
+						<div class="login">
+							<a href="javascript:" id="log">Авторизация</a> <img src="images/bg/bdr.png" alt="" /> <a href="#">Регистрация</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div><!--top_line-->
+			<div class="max_width">
+				<div class="head_under">
+					<div class="logo">
+						<h1><a href="#"><img src="images/bg/logo.png" alt="" width="278" height="35" /></a></h1>
+						<p class="description">Сервис по подбору нового автомобиля</p>
+					</div><!--logo-->
+					<div class="head_right">
+						<div class="col_in">
+							<p class="social">
+								<a href="#"><img src="images/bg/soc4.png" alt="" width="26" height="26" /></a>
+                                <a href="#"><img src="images/bg/soc1.png" alt="" width="26" height="26" /></a>
+								<a href="#"><img src="images/bg/soc2.png" alt="" width="26" height="26" /></a>
+								<a href="#"><img src="images/bg/soc3.png" alt="" width="26" height="26" /></a>
+							</p>
+							<div class="search">
+								<button>&nbsp;</button>
+								<input type="text" value="поиск..." />
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div><!--head_right-->
+					<div class="clear"></div>
+				</div><!--head_under-->
+				<div class="menu">
+					<div class="menu_in">
+						<table>
+							<tr>
+								<td><a href="#">Авто</a></td>
+								<td>
+									<div class="sub">
+										<div class="submenu">
+											<p><a href="#">Новости сайта</a></p>
+											<p><a href="#">Новости автосалонов</a></p>
+											<p><a href="#">Акции автосалонов</a></p>
+											<p><a href="#">Ожидаемые новинкки</a></p>
+										</div>
+									</div>
+									<a href="#" class="current">Новости</a>
+								</td>
+								<td><a href="#">Отзывы</a></td>
+								<td><a href="#">Автосалоны</a></td>
+								<td><a href="#">Общение	</a></td>
+								<td><a href="#">Больше</a></td>
+							</tr>
+						</table>
+					</div>
+				</div><!--menu-->
+			</div>
+		</div><!--head-->
+		
+		<div class="max_width">
+			
+			<div class="main">
+				<div class="right_col">
+					<div class="col_in">
+						
+						<div class="link_selection">
+							<a href="javascript:">БЫСТРЫЙ<br />ВЫБОР МОДЕЛИ</a>
+						</div><!--link_selection-->
+						
+						<div class="text_box">
+							<p class="title">Реклама</p>
+							<div>
+								
+							</div>
+						</div>
+						
+						<div class="text_box">
+							<p class="title">Последнее в блогах</p>
+							<div class="box_in" id="scrolly1">
+								<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div>
+							</div>
+							<div class="more">
+								<a href="#">blogs.autoneva.ru</a>
+							</div>
+						</div><!--text_box-->
+						
+						<div class="text_box">
+							<p class="title">Последнее на форуме</p>
+							<div class="box_in" id="scrolly2">
+								<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+										</div> 
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+										</div>
+										<div class="post">
+											<p class="date">25.07.2012</p>
+											<p><a href="#">Toyota отзывает в России 90 тысяч RAV4 и Avensis</a></p>
+										</div>
+							</div>
+							<div class="more">
+								<a href="#">forum.autoneva.ru</a>
+							</div>
+						</div><!--text_box-->
+						
+						<div class="text_widget">
+							<p class="title">О проекте</p>
+							<p>Сегодня в России свои новые модели представляют более 50 зарубежных и отечественных производителей. Количество моделей исчисляется уже несколькими сотнями. А если учесть, что каждая модель может иметь несколько вариантов комплектаций, то выбор «автомобиля для себя» становится задачей чрезвычайно сложной, отнимающей много времени. Цель нашего сайта — максимально упростить эту задачу.</p>
+							<p>На этом сайте вы найдете все новые модели автомобилей, представленные на российском рынке. В поисковой системе заложено более 80 параметров, которые помогут вам найти все предложения производителей, соответствующие вашим требованиям к автомобилю.</p>
+						</div><!--text_widget-->
+						
+					</div>
+				</div><!--right_col-->
+				<div class="left_col">
+					<div class="col_in">
+						<div class="speedbar">
+                            <a href="#" class="back">Назад</a> <span class="bdr"></span> <a href="#">Главная</a> <span></span> <a href="#">Новости о новинках</a>
+                        </div>
+						
+                        <div class="text_box">
+                        	<p class="title br">
+                            	<span class="back"><a href="#">Возврата к результатам поиска</a></span>
+                            	Автосалон Форис
+                            </p>
+                            <div class="info_box">
+                            	<div class="menu_col">
+                                	<div class="col_in">
+                                    	<div class="rev">
+                                        	<table width="100%">
+                                            	<tr>
+                                                	<td class="first"><a href="#" class="ov">153<br /><span>отзыва</span></a></td>
+                                                    <td><a href="#" class="rt">+9,83<br /><span>рейтинг</span></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="menu_list">
+                                        	<p><a href="#">Акции/Новости</a></p>
+                                            <p><a href="#" class="curr">Автомобили</a></p>
+                                            <p><a href="#">Фото</a></p>
+                                            <p><a href="#">Виртуальный тур</a></p>
+                                            <p><a href="#">Отзывы</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="info_in">
+                                	<div class="col_in">
+                                    	<div class="diler">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td><strong>Официальный дилер, Сервис</strong></td>
+                                                    <td width="45%"><a href="#">Chrysler</a>, <a href="#">Dodge</a>, <a href="#">Jeep</a>,<a href="#">Chrysler</a>, <a href="#">Dodge</a>, <a href="#">Jeep</a>,<a href="#">Chrysler</a>, <a href="#">Dodge</a>, <a href="#">Jeep</a>,<a href="#">Chrysler</a>, <a href="#">Dodge</a>, <a href="#">Jeep</a>,</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="addr">
+                                        	<table width="100%">
+                                            	<tr>
+                                                	<td>
+                                                    	<div class="adr">
+                                                        	<p><strong>Адрес:</strong></p>
+                                                            <p>Санкт-Петербург<br />
+                                                            ул. Орбели, д. 35</p>
+                                                         </div>
+                                                         <div class="adr">
+                                                        	<p><strong>Метро:</strong></p>
+                                                            <p>ст.м. Площадь Мужества</p>
+                                                         </div>
+                                                         <p><a href="#">www.foris-auto.ru</a></p>
+                                                    </td>
+                                                    <td width="45%">
+                                                    	<div class="adr">
+                                                        	<p><strong>Телефон:</strong></p>
+                                                            <p>(812) 329-1188</p>
+                                                        </div>
+                                                        <div class="adr">
+                                                        	<p><strong>Время работы:</strong></p>
+                                                            <p>ПН - ВС - 8:00 - 22:00</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="map">
+                                        	<img src="images/del/map.jpg" alt="" width="448" height="193" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="more bug">
+										<span></span><a href="#">Сообщить об ошибке</a>
+									</div>
+                        </div>
+						
+						<div class="text_box">
+							<p class="title">Акции и новости автосалона</p>
+							<div class="news_box">
+                            	<div class="new_col f_left">
+                                	<div class="post">
+                                    	<p class="date">25.07.2012</p>
+										<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+                                    </div>
+                                    <div class="post">
+                                    	<p class="date">25.07.2012</p>
+										<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+                                    </div>
+                                    <div class="post">
+                                    	<p class="date">25.07.2012</p>
+										<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+                                    </div>
+                                </div>
+                                <div class="new_col f_right">
+                                	<div class="post">
+                                    	<p class="date">25.07.2012</p>
+										<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+                                    </div>
+                                    <div class="post">
+                                    	<p class="date">25.07.2012</p>
+										<p><a href="#">Jaguar пополнит модельный ряд кроссовером и гибридным суперкаром</a></p>
+                                    </div>
+                                    <div class="post">
+                                    	<p class="date">25.07.2012</p>
+										<p><a href="#">Ford Mondeo на прощание получил тюнинг-кит</a></p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div> 
+                            <div class="more">
+								<a href="#">Все новости</a>
+							</div>
+						</div>
+						
+						
+						
+						
+						
+						
+						
+						<div class="clear"></div>
+						
+						<div class="text_box auto">
+							<p class="title">Автомобили</p>
+                            <div class="title_auto">
+                            	<span><a href="#">Все автомобили Chrysler</a></span>
+                                Chrysler
+                            </div>
+							<div class="scrollx" id="scrollx1">
+								<table>
+											<tr>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly2.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly3.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly4.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+											</tr>
+                                            <tr>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly2.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly3.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly4.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+											</tr>
+										</table>
+							</div>
+                            <div class="title_auto">
+                            	<span><a href="#">Все автомобили Dodge</a></span>
+                                Dodge
+                            </div>
+                            <div class="scrollx" id="scrollx3">
+								<table>
+											<tr>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly2.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly3.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly4.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+											</tr>
+                                            <tr>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly2.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly3.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly4.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+												<td>
+													<div class="novetly">
+														<div class="image"><a href="#"><img src="images/del/novetly1.png" alt="" width="157" height="91" /></a></div>
+														<p class="name"><a href="#">Mercedes-Benz GLA</a></p>
+														<p class="deb">Цена: от 1200000 руб.</p>
+													</div>
+												</td>
+											</tr>
+										</table>
+							</div>
+                            <div class="more">
+								<a href="#">Все автомобили</a>
+							</div>
+						</div><!--text_box-->
+						
+						<div class="text_box">
+							<p class="title">Фото</p>
+							<div class="slider">
+								<div id="thumbs" class="navigation">
+									<ul class="thumbs noscript">
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #0">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big3.jpg" title="Title #1">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #2">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #0">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #1">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #2">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #0">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #1">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #2">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #0">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #1">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #2">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #3">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #4">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+										<li>
+											<a class="thumb" name="leaf" href="images/del/big_photo.png" title="Title #5">
+												<img src="images/del/auto1.png" alt="auto1" />
+											</a>
+											<div class="caption">
+												<div class="image-title">Mercedes-Benz GL-Класса</div>
+											</div>
+										</li>
+									</ul>
+									<div class="clear"></div>
+									<div id="controls" class="controls"></div>
+								</div>
+								
+								<div id="gallery" class="content">
+									<div class="slideshow-container">
+										<div id="loading" class="loader"></div>
+										<div id="slideshow" class="slideshow"></div>
+									</div>
+									<div id="caption" class="caption-container"></div>
+								</div>
+								
+								
+								<div class="clear"></div>
+							</div>
+							<div class="more">
+								<a href="#">Все фото</a>
+							</div>
+						</div>
+                        
+                        <div class="text_box">
+                        	<p class="title">Виртуальный тур</p>
+                            <div class="tour">
+                            	<div class="videotour">
+                                	<img src="images/del/videotour.jpg" alt="" width="402" height="309" />
+                                </div>
+                                <div class="textour content">
+                                	<p>Информация о виртуально туре.</p>
+                                    <p>Технические требования для просмотра виртуального тура.</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+						
+                        <div class="text_box">
+                        	<p class="title">Отзывы об автосаноне</p>
+                        	<div class="write_comment">
+											<div class="form">
+												<table>
+													<tr>
+														<td><strong>Ваше имя:</strong></td>
+														<td><input type="text" value="Имя" /></td>
+													</tr>
+													<tr>
+														<td><strong>Комментарий:</strong></td>
+														<td><textarea></textarea></td>
+													</tr>
+													<tr>
+														<td><strong>Введите символы:</strong></td>
+														<td><img src="images/del/captcha.png" alt="" width="83" height="31" /> <input type="text" /></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td><button><span>Отправить</span></button></td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										
+										<div class="comments">
+											<div class="comment">
+												<p class="date">12.09.2012 11:17:55</p>
+												<div class="ava"><a href="#"><img src="images/del/ava.png" alt="" width="54" height="53" /></a></div>
+												<p class="author">Сидоров Федр </p>
+												<div class="clear"></div>
+												<div class="text">
+													<p>Текст текст комментария  комментария.</p>
+												</div>
+												<div class="rate">
+													<a href="javascript:" class="max">+</a> +11 <a href="javascript:" class="min">-</a>
+												</div>
+												<p class="quote"><a href="#">Ответить</a> <a href="#">Ответить с цитатой</a></p>
+												<div class="clear"></div>
+											</div>
+											
+											<div class="comment">
+												<p class="date">12.09.2012 11:17:55</p>
+												<div class="ava"><a href="#"><img src="images/del/ava.png" alt="" width="54" height="53" /></a></div>
+												<p class="author">Сидоров Федр </p>
+												<div class="clear"></div>
+												<div class="text">
+													<p>Текст текст комментария  комментария.</p>
+												</div>
+												<div class="rate">
+													<a href="javascript:" class="max">+</a> +11 <a href="javascript:" class="min">-</a>
+												</div>
+												<p class="quote"><a href="#">Ответить</a> <a href="#">Ответить с цитатой</a></p>
+												<div class="clear"></div>
+											</div>
+											
+											<div class="comment reply">
+												<p class="date">12.09.2012 11:17:55</p>
+												<div class="ava"><a href="#"><img src="images/del/ava.png" alt="" width="54" height="53" /></a></div>
+												<p class="author">Сидоров Федр </p>
+												<div class="clear"></div>
+												<div class="text">
+													<p>Текст текст комментария  комментария.</p>
+												</div>
+												<div class="rate">
+													<a href="javascript:" class="max">+</a> +11 <a href="javascript:" class="min">-</a>
+												</div>
+												<p class="quote"><a href="#">Ответить</a> <a href="#">Ответить с цитатой</a></p>
+												<div class="clear"></div>
+											</div>
+											
+										</div>
+                                        <div class="more">
+                                            <a href="#">Все отзывы</a>
+                                        </div>
+                        </div>
+						
+						
+					</div>
+				</div><!--left_col-->
+				<div class="clear"></div>
+			</div><!--main-->
+			
+		</div>
+		
+		<div class="vote"></div>
+	</div><!--root-->
+	<div class="footer">
+		<div class="max_width">
+			<div class="foot_in">
+				<table width="100%">
+					<tr>
+						<th>Автомобили</th>
+						<th>Адреса</th>
+						<th>Новое</th>
+						<th>Автонева</th>
+						<th><a href="#"><img src="images/bg/foot_logo.png" alt="" width="162" height="20" /></a></th>
+					</tr>
+					<tr>
+						<td>
+							<p><a href="#">Рейтинг автомобилей</a></p>
+							<p><a href="#">Новые автомобили</a></p>
+							<p><a href="#">Ожидаемые новинки</a></p>
+							<p><a href="#">Концепт-кары</a></p>
+							<p><a href="#">Глоссарий</a></p>
+							<p><a href="#">Вопрос - Ответ</a></p>
+						</td>
+						<td>
+							<p><a href="#">Автосалоны</a></p>
+							<p><a href="#">Автошколы</a></p>
+							<p><a href="#">Автоклубы</a></p>
+							<p><a href="#">Страховые компании</a></p>
+						</td>
+						<td>
+							<p><a href="#">Твиттер новости</a></p>
+							<p><a href="#">Новости о новинках</a></p>
+							<p><a href="#">Акции автосалонов</a></p>
+							<p><a href="#">Новости автосалонов</a></p>
+							<p><a href="#">Блоги</a></p>
+							<p><a href="#">Видео</a></p>
+						</td>
+						<td>
+							<p><a href="#">Для представителей</a></p>
+							<p><a href="#">Новости сайта</a></p>
+							<p><a href="#">Наши акции</a></p>
+							<p><a href="#">Реклама</a></p>
+							<p><a href="#">О проекте</a></p>
+							<p><a href="#">Контакты</a></p>
+						</td>
+						<td>
+							<p><a href="#">Реклама на сайте</a></p>
+							<p><a href="#">О проекте</a></p>
+							<p><a href="#">Контакты</a></p>
+						</td>
+					</tr>
+				</table>
+			</div><!--foot_in-->
+			
+			<div class="foot_left">
+				<div class="col_in">
+					<p>© 2008 - 2012 AutoNeva.ru</p>
+				</div>
+			</div><!--foot_left-->
+			<div class="foot_right">
+				<div class="col_in">
+					<div class="counter">
+						<a href="#"><img src="images/del/counter1.png" alt="" /></a>
+						<a href="#"><img src="images/del/counter2.png" alt="" /></a>
+						<a href="#"><img src="images/del/counter3.png" alt="" /></a>
+						<a href="#"><img src="images/del/counter4.png" alt="" /></a>
+					</div>
+				</div>
+			</div><!--foot_right-->
+			<div class="clear"></div>
+		</div>
+	</div><!--footer-->
+</body>
+</html>

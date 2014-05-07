@@ -1,0 +1,19 @@
+#YMapsID_large { position:fixed; left:0; top:0; z-index:2; width:100%!important; height:100%!important;}
+.contact{ padding-top:20px;}
+.contact .box{ padding:8px; border:1px solid #ccc; border-radius:5px; background:url(../images/bg/box.png) repeat center top; float:left; width:324px;}
+.contact .logo{ float: none; margin:0 auto; display:inline-block; padding:20px 0 20px 25px;}
+.menu_in .cusel{ width:260px!important; height:24px; position:relative; top:6px; float:right; right:6px;}
+.contact .text_box{ margin:0;}
+.contact .text_box .box_in{}
+.contact .text_box .title{ border-bottom:1px solid #99cce5; padding-bottom:5px; margin-bottom:10px; line-height:115%;}
+.contact .text_box p img{ vertical-align: middle;}
+.contact .text_box p{ padding-bottom:5px; line-height:20px;}
+.contact .text_box .page_navi{ border-top:1px solid #ccc; padding-top:5px;}
+.search2{ width:149px; height:26px; background:url(../images/bg/search2.png) no-repeat left top; margin-bottom:10px;}
+.search2 button{ height:26px; border: none; background: none; width:24px;}
+.search2 input{ border: none; background: none; width:98px; padding:0 10px; line-height:26px; height:26px; color:#999999;}
+.contact .srt{ height:26px;line-height:26px;}
+.contact .srt .on{ color:#666666; font-weight:bold;}
+.contact .mCSB_container{ padding-bottom:20px;}
+.contact .box{ position:relative; z-index:5;}
+.contact .relative{ z-index:5;}
