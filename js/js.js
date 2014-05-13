@@ -407,8 +407,45 @@ $(".sravnenie td").mouseover(function() {
 		return false;
 	});
 
+	$('.subscribe input[type="checkbox"]').uniform();
+	
+	$('.subscribe .click').bind('click', function() {
+		if ( $(this).hasClass('active') ) {
+			$(this).parent('.subscribe').find('.drop').hide().removeClass('bottom');
+			$(this).removeClass('active');
+		}
+		else {
+			$(this).parent('.subscribe').find('.drop').css({'left': $(this).width()+78+'px'}).show();
+			$(this).addClass('active');
+			if ( ($(this).parent('.subscribe').find('.drop').offset().left + $(this).parent('.subscribe').find('.drop').width() + 36) > $(window).width() ) {
+				$(this).parent('.subscribe').find('.drop').addClass('bottom');
+			}
+		}
+		return false;
+	});
+	
+	$('.subscribe .drop .submit').bind('click', function() {
+		$(this).parents('.subscribe').find('.drop').hide().removeClass('bottom');
+		$(this).parents('.subscribe').find('.click').removeClass('active');
+		return false;
+	});
+	
+	$('.root').click(function() {
+		$('.subscribe .drop').hide().removeClass('bottom');
+		$('.subscribe .click').removeClass('active');
+		return false;
+	});
+	
+	$('.subscribe .drop').click(function(event){
+		event.stopPropagation();
+	});
 
-
+	$('a.bubble').bind('click', function() {
+		$('div.bubble.'+$(this).attr('href')).siblings('.bubble').stop(true, true).fadeOut(0);
+		$('div.bubble.'+$(this).attr('href')).stop(true, true).fadeIn(150).delay(2500).fadeOut(150);
+		return false;
+	});
+	
 });
 
 var current = $(this);
