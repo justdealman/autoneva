@@ -433,7 +433,6 @@ $(".sravnenie td").mouseover(function() {
 	$('.root').click(function() {
 		$('.subscribe .drop').hide().removeClass('bottom');
 		$('.subscribe .click').removeClass('active');
-		return false;
 	});
 	
 	$('.subscribe .drop').click(function(event){

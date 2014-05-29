@@ -1,0 +1,989 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AUTONEVA</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/cusel.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+<script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/cusel-min-2.5.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/js_header.js"></script>
+<!--[if IE 7]>
+	<style>
+    	.speedbar span{ position: relative; top:-3px;}
+    </style>		
+<![endif]-->
+</head>
+
+<body>
+	<div class="root">
+    	<div class="scrolltop">
+        	<a href="#">НАВЕРХ</a>
+        </div>
+		<div class="pop">
+			<div class="pop_bg"></div>
+			<div class="pop_rel">
+				<div class="town_box">
+					<a href="javascript:" class="close"></a>
+					<p class="title">Выберете город</p>
+					<table width="100%">
+						<tr>
+							<td>
+								<p class="name">А</p>
+								<div class="list_town">
+									<p><a href="#">Алания (Республика Северная Осетия - Алания)</a></p>
+									<p><a href="#">Алтай (Республика Алтай) — Горно-Алтайск</a></p>
+									<p><a href="#">Алтайский край — Барнаул</a></p>
+									<p><a href="#">Амурская область — Благовещенск</a></p>
+									<p><a href="#">Архангельская область</a></p>
+									<p><a href="#">Астраханская область</a></p>
+								</div>
+								<p class="name">Б</p>
+								<div class="list_town">
+									<p><a href="#">Башкортостан (Республика Башкортостан) — Уфа</a></p>
+									<p><a href="#">Белгородская область</a></p>
+									<p><a href="#">Брянская область</a></p>
+									<p><a href="#">Бурятия (Республика Бурятия) — Улан-Удэ</a></p>
+								</div>
+								<p class="name">В</p>
+								<div class="list_town">
+									<p><a href="#">Владимирская область</a></p>
+									<p><a href="#">Волгоградская область</a></p>
+									<p><a href="#">Вологодская область</a></p>
+									<p><a href="#">Воронежская область</a></p>
+								</div>
+							</td>
+							<td>
+								<p class="name">К</p>
+								<div class="list_town">
+									<p><a href="#">Кабардино-Балкарская Республика — Нальчик</a></p>
+									<p><a href="3">Калининградская область</a></p>
+									<p><a href="#">Калмыкия (Республика Калмыкия) — Элиста</a></p>
+									<p><a href="#">Калужская область</a></p>
+									<p><a href="#">Камчатский край — Петропавловск-Камчатский</a></p>
+									<p><a href="#">Карачаево-Черкесская Республика — Черкесск</a></p>
+									<p><a href="#">Карелия (Республика Карелия) — Петрозаводск</a></p>
+									<p><a href="#">Кемеровская область</a></p>
+									<p><a href="#">Кировская область</a></p>
+									<p><a href="#">Коми (Республика Коми) — Сыктывкар</a></p>
+									<p><a href="#">Костромская область</a></p>
+									<p><a href="#">Краснодарский край</a></p>
+									<p><a href="#">Красноярский край — Красноярск</a></p>
+									<p><a href="#">Красноярский край — Норильск</a></p>
+									<p><a href="#">Курганская область</a></p>
+									<p><a href="#">Курская область</a></p>
+								</div>
+							</td>
+							<td>
+								<p class="name">С</p>
+								<div class="list_town">
+									<p><a href="#">Самарская область</a></p>
+									<p><a href="#">Санкт-Петербург, Ленинградская область</a></p>
+									<p><a href="#">Саратовская область</a></p>
+									<p><a href="#">Саха (Якутия) (Республика Саха (Якутия)) — Якутск</a></p>
+									<p><a href="#">Сахалинская область — Южно-Сахалинск</a></p>
+									<p><a href="#">Свердловская область — Екатеринбург</a></p>
+									<p><a href="#">Смоленская область</a></p>
+									<p><a href="#">Ставропольский край</a></p>
+								</div>
+								<p class="name">Т</p>
+								<div class="list_town">
+									<p><a href="#">Тамбовская область</a></p>
+									<p><a href="#">Татарстан (Республика Татарстан) — Казань</a></p>
+									<p><a href="#">Тверская область</a></p>
+									<p><a href="#">Томская область</a></p>
+									<p><a href="#">Тульская область</a></p>
+									<p><a href="#">Тыва (Республика Тыва) — Кызыл</a></p>
+									<p><a href="#">Тюменская область</a></p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div><!--town_box-->
+				<div class="login_box">
+					<a href="javascript:" class="close"></a>
+					<p class="title">Авторизация</p>
+					<table width="100%">
+						<tr>
+							<td>Логин:</td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td>Пароль:</td>
+							<td><input type="text" /></td>
+						</tr>
+					</table>
+					<p class="log"><a href="#">Забыли пароль</a><span><img src="images/bg/bdr.png" alt="" /></span><input type="submit" value="Войти" /></p>
+				</div><!--login_box-->
+				<div class="models">
+					<a href="javascript:" class="close"></a>
+					<p class="title">Быстрый выбор модели</p>
+					<div class="box">
+						<div class="list">
+							<div class="col_in">
+								<p class="name">Производитель</p>
+								<table width="100%">
+									<tr>
+										<td>
+											<p><a href="#">ACURA</a></p>
+											<p><a href="#">DAEWOO</a></p>
+											<p><a href="#">INFINITI</a></p>
+											<p><a href="#" class="current">CHEVROLET</a></p>
+											<p><a href="#">SEAT</a></p>
+											<p><a href="#">ALFA ROMEO</a></p>
+											<p><a href="#">DAIHATSU</a></p>
+											<p><a href="#">IRAN KHODRO</a></p>
+											<p><a href="#">MERCURYSKODA</a></p>
+											<p><a href="#">ASTON MARTIN</a></p>
+											<p><a href="#">DODGE</a></p>
+											<p><a href="#">ISUZU</a></p>
+											<p><a href="#">MG</a></p>
+											<p><a href="#">SMA</a></p>
+											<p><a href="#">AUDI</a></p>
+											<p><a href="#">FAW</a></p>
+											<p><a href="#">JAC</a></p>
+											<p><a href="#">MINI</a></p>
+											<p><a href="#">SMART</a></p>
+											<p><a href="#">BMW</a></p>
+											<p><a href="#">FIAT</a></p>
+											<p><a href="#">JAGUAR</a></p>
+										</td>
+										<td>
+											<p><a href="#">MITSUBISHI</a></p>
+											<p><a href="#">SSANG YONG</a></p>
+											<p><a href="#">BRILLIANCE</a></p>
+											<p><a href="#">FORD</a></p>
+											<p><a href="#">JEEP</a></p>
+											<p><a href="#">NISSAN</a></p>
+											<p><a href="#">SUBARU</a></p>
+											<p><a href="#">BYD</a></p>
+											<p><a href="#">GEELY</a></p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="list2">
+							<div class="col_in">
+								<p class="name">Модели CHEVROLET</p>
+								<table width="100%">
+									<tr>
+										<td>
+											<p><a href="#">ALERO</a></p>
+											<p><a href="#">CLASSIC</a></p>
+											<p><a href="#">LUMINA</a></p>
+											<p><a href="#">SSR</a></p>
+											<p><a href="#">ASTRA</a></p>
+											<p><a href="#">COBALT</a></p>
+											<p><a href="#">LUV</a></p>
+											<p><a href="#">D-MAX</a></p>
+											<p><a href="#">STARCRAFT</a></p>
+											<p><a href="#">ASTRO</a></p>
+											<p><a href="#">MONTE CARLO</a></p>
+											<p><a href="#">ISUZU</a></p>
+											<p><a href="#">MG</a></p>
+											<p><a href="#">SMA</a></p>
+											<p><a href="#">AUDI</a></p>
+											<p><a href="#">FAW</a></p>
+											<p><a href="#">JAC</a></p>
+											<p><a href="#">MINI</a></p>
+											<p><a href="#">SMART</a></p>
+											<p><a href="#">BMW</a></p>
+											<p><a href="#">FIAT</a></p>
+											<p><a href="#">JAGUAR</a></p>
+										</td>
+										<td>
+											<p><a href="#">MITSUBISHI</a></p>
+											<p><a href="#">SSANG YONG</a></p>
+											<p><a href="#">BRILLIANCE</a></p>
+											<p><a href="#">FORD</a></p>
+											<p><a href="#">JEEP</a></p>
+											<p><a href="#">NISSAN</a></p>
+											<p><a href="#">SUBARU</a></p>
+											<p><a href="#">BYD</a></p>
+											<p><a href="#">GEELY</a></p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div><!--models-->
+			</div>
+		</div><!--pop-->
+		<div class="head">
+			<div class="top_line">
+				<div class="max_width">
+					<div class="in">
+						<div class="language">
+							<a href="#" class="active"><img src="images/bg/flag1.png" alt="" width="21" height="12" /></a>
+							<a href="#"><img src="images/bg/flag2.png" alt="" width="21" height="12" /></a>
+							<a href="#"><img src="images/bg/flag3.png" alt="" width="21" height="12" /></a>
+						</div>
+						<div class="town">
+							<a href="javascript:">Санкт-Петербург</a>
+						</div>
+						<div class="login">
+							<a href="javascript:" id="log">Авторизация</a> <img src="images/bg/bdr.png" alt="" /> <a href="#">Регистрация</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div><!--top_line-->
+			<div class="max_width">
+				<div class="head_under">
+					<div class="logo">
+						<h1><a href="#"><img src="images/bg/logo.png" alt="" width="278" height="35" /></a></h1>
+						<p class="description">Сервис по подбору нового автомобиля</p>
+					</div><!--logo-->
+					<div class="head_right">
+						<div class="col_in">
+							<p class="social">
+								<a href="#"><img src="images/bg/soc4.png" alt="" width="26" height="26" /></a>
+                        <a href="#"><img src="images/bg/soc1.png" alt="" width="26" height="26" /></a>
+								<a href="#"><img src="images/bg/soc2.png" alt="" width="26" height="26" /></a>
+								<a href="#"><img src="images/bg/soc3.png" alt="" width="26" height="26" /></a>
+							</p>
+							<div class="search">
+								<button>&nbsp;</button>
+								<input type="text" value="поиск..." />
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div><!--head_right-->
+					<div class="clear"></div>
+				</div><!--head_under-->
+				<div class="menu">
+					<div class="menu_in">
+						<table>
+							<tr>
+								<td><a href="#">Авто</a></td>
+								<td>
+									<div class="sub">
+										<div class="submenu">
+											<p><a href="#">Новости сайта</a></p>
+											<p><a href="#">Новости автосалонов</a></p>
+											<p><a href="#">Акции автосалонов</a></p>
+											<p><a href="#">Ожидаемые новинкки</a></p>
+										</div>
+									</div>
+									<a href="#" class="current">Новости</a>
+								</td>
+								<td><a href="#">Отзывы</a></td>
+								<td><a href="#">Автосалоны</a></td>
+								<td><a href="#">Общение	</a></td>
+								<td><a href="#">Больше</a></td>
+							</tr>
+						</table>
+					</div>
+				</div><!--menu-->
+			</div>
+		</div><!--head-->
+		
+
+
+		<div class="comparison">
+			<!--<p class="link"><a href="#">Ссылка на данное сравнение</a></p>-->
+			<div class="f_right link">
+				<div class="more_link">
+					<div class="arr"></div>
+					<table width="100%">
+						<tbody>
+							<tr>
+								<td colspan="2"><p><strong><a href="#">http://spb.autoneva.ru/new_cars/compare.php</a></strong></p></td>
+							</tr>
+							<tr>
+								<td colspan="2"><p><a href="#"><img src="images/bg/link2.png" alt=""> Копировать</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="#"><img src="images/bg/link3.png" alt=""> В избранное</a></p></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p><a href="#" class="linksrvn"><img src="images/bg/link.png" alt=""> Ссылка на данное сравнение</a></p>
+			</div>
+			<h1>Сравнение автомобилей</h1>
+			<div class="description">
+				<p>На этом сайте вы найдете все новые модели автомобилей, представленные на российском рынке. В поисковой системе заложено более 80 параметров, которые помогут вам найти все предложения производителей, соответствующие вашим требованиям к автомобилю.</p>
+			</div>
+			<div>
+				<span class="toleft"></span>
+				<span class="toright"></span>
+				<div class="addauto">
+					<h3>Добавить АМ к сравнению</h3>
+					<ul>
+						<li><a href="#">Выбор марки</a></li>
+						<li><a href="#">Выбор модели</a></li>
+						<li>Выбор модификации</li>
+					</ul>
+					<h5>Производители</h5>
+					<div>
+						<div>
+							<p><a href="#" class="add_srv">ACURA</a></p>
+							<p><a href="#" class="add_srv">DAEWOO</a></p>
+							<p><a href="#" class="add_srv">INFINITI</a></p>
+							<p><a href="#" class="add_srv">IRAN KHODRO</a></p>
+							<p><a href="#" class="add_srv">SEAT</a></p>
+							<p><a href="#" class="add_srv">ALFA ROMEO</a></p>
+							<p><a href="#" class="add_srv">DAIHATSU</a></p>
+							<p><a href="#" class="add_srv">IRAN KHODRO</a></p>
+							<p><a href="#" class="add_srv">MERCURYSKODA</a></p>
+							<p><a href="#" class="add_srv">ASTON MARTIN</a></p>
+							<p><a href="#" class="add_srv">DODGE</a></p>
+							<p><a href="#" class="add_srv">ISUZU</a></p>
+							<p><a href="#" class="add_srv">MG</a></p>
+							<p><a href="#" class="add_srv">SMA</a></p>
+							<p><a href="#" class="add_srv">AUDI</a></p>
+							<p><a href="#" class="add_srv">FAW</a></p>
+						</div>
+						<div>
+							<p><a href="#" class="add_srv">MITSUBISHI</a></p>
+							<p><a href="#" class="add_srv">SSANG YONG</a></p>
+							<p><a href="#" class="add_srv">BRILLIANCE</a></p>
+							<p><a href="#" class="add_srv">FORD</a></p>
+							<p><a href="#" class="add_srv">JEEP</a></p>
+							<p><a href="#" class="add_srv">NISSAN</a></p>
+							<p><a href="#" class="add_srv">SUBARU</a></p>
+							<p><a href="#" class="add_srv">BYD</a></p>
+							<p><a href="#" class="add_srv">GEELY</a></p>
+							<p><a href="#" class="add_srv">MINI</a></p>
+							<p><a href="#" class="add_srv">SMART</a></p>
+							<p><a href="#" class="add_srv">BMW</a></p>
+							<p><a href="#" class="add_srv">FIAT</a></p>
+							<p><a href="#" class="add_srv">JAGUAR</a></p>
+							<p><a href="#" class="add_srv">MINI</a></p>
+							<p><a href="#" class="add_srv">SMART</a></p>
+						</div>
+						<div>
+							<p><a href="#" class="add_srv">ACURA</a></p>
+							<p><a href="#" class="add_srv">DAEWOO</a></p>
+							<p><a href="#" class="add_srv">INFINITI</a></p>
+							<p><a href="#" class="add_srv">IRAN KHODRO</a></p>
+							<p><a href="#" class="add_srv">SEAT</a></p>
+							<p><a href="#" class="add_srv">ALFA ROMEO</a></p>
+							<p><a href="#" class="add_srv">DAIHATSU</a></p>
+							<p><a href="#" class="add_srv">IRAN KHODRO</a></p>
+							<p><a href="#" class="add_srv">MERCURYSKODA</a></p>
+							<p><a href="#" class="add_srv">ASTON MARTIN</a></p>
+							<p><a href="#" class="add_srv">DODGE</a></p>
+							<p><a href="#" class="add_srv">ISUZU</a></p>
+							<p><a href="#" class="add_srv">MG</a></p>
+							<p><a href="#" class="add_srv">SMA</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="scroll">
+					<table>
+						<thead>
+							<tr>
+								<th>
+									<h3>Мой выбор <span><a href="#">Отменить</a></span></h3>
+									<h5><a href="#">Добавить АМ к сравнению</a></h5>
+									<p><a href="#">Очистить все</a></p>
+									<div class="nav">
+										<ul>
+											<li class="active"><a href="#">Все</a></li>
+											<li><a href="#">Отличающиеся</a></li>
+											<li><a href="#">Ключевые</a></li>
+										</ul>
+										<ul>
+											<li><a href="#">Параметры</a></li>
+											<li><a href="#">Фото</a></li>
+											<li><a href="#">Новости</a></li>
+											<li><a href="#">Акции</a></li>
+										</ul>
+									</div>
+								</th>
+								<td>
+									<div class="select"><p><a href="#">Сделать выбор</a></p></div>
+									<div class="controls">
+										<div class="image"><a href="#"><img src="images/del/654.jpg" alt=""></a></div>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<div class="pre_nav">
+											<a href="#" class="prev"></a>
+											<a href="#" class="del"></a>
+											<a href="#" class="next"></a>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="select"><p><a href="#">Сделать выбор</a></p></div>
+									<div class="controls">
+										<div class="image"><a href="#"><img src="images/del/654.jpg" alt=""></a></div>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<div class="pre_nav">
+											<a href="#" class="prev"></a>
+											<a href="#" class="del"></a>
+											<a href="#" class="next"></a>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="select"><p><a href="#">Сделать выбор</a></p></div>
+									<div class="controls">
+										<div class="image"><a href="#"><img src="images/del/654.jpg" alt=""></a></div>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<div class="pre_nav">
+											<a href="#" class="prev"></a>
+											<a href="#" class="del"></a>
+											<a href="#" class="next"></a>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="select"><p><a href="#">Сделать выбор</a></p></div>
+									<div class="controls">
+										<div class="image"><a href="#"><img src="images/del/654.jpg" alt=""></a></div>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<div class="pre_nav">
+											<a href="#" class="prev"></a>
+											<a href="#" class="del"></a>
+											<a href="#" class="next"></a>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="select"><p><a href="#">Сделать выбор</a></p></div>
+									<div class="controls">
+										<div class="image"><a href="#"><img src="images/del/654.jpg" alt=""></a></div>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<div class="pre_nav">
+											<a href="#" class="prev"></a>
+											<a href="#" class="del"></a>
+											<a href="#" class="next"></a>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="select"><p><a href="#">Сделать выбор</a></p></div>
+									<div class="controls">
+										<div class="image"><a href="#"><img src="images/del/654.jpg" alt=""></a></div>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<div class="pre_nav">
+											<a href="#" class="prev"></a>
+											<a href="#" class="del"></a>
+											<a href="#" class="next"></a>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="select"><p><a href="#">Сделать выбор</a></p></div>
+									<div class="controls">
+										<div class="image"><a href="#"><img src="images/del/654.jpg" alt=""></a></div>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<div class="pre_nav">
+											<a href="#" class="prev"></a>
+											<a href="#" class="del"></a>
+											<a href="#" class="next"></a>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="select"><p><a href="#">Сделать выбор</a></p></div>
+									<div class="controls">
+										<div class="image"><a href="#"><img src="images/del/654.jpg" alt=""></a></div>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<div class="pre_nav">
+											<a href="#" class="prev"></a>
+											<a href="#" class="del"></a>
+											<a href="#" class="next"></a>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="select"><p><a href="#">Сделать выбор</a></p></div>
+									<div class="controls">
+										<div class="image"><a href="#"><img src="images/del/654.jpg" alt=""></a></div>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<div class="pre_nav">
+											<a href="#" class="prev"></a>
+											<a href="#" class="del"></a>
+											<a href="#" class="next"></a>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="select"><p><a href="#">Сделать выбор</a></p></div>
+									<div class="controls">
+										<div class="image"><a href="#"><img src="images/del/654.jpg" alt=""></a></div>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<p><select><option value="1">Volvo</option></select></p>
+										<div class="pre_nav">
+											<a href="#" class="prev"></a>
+											<a href="#" class="del"></a>
+											<a href="#" class="next"></a>
+										</div>
+									</div>
+								</td>
+							</tr>
+						<thead>
+						<tbody>
+							<tr class="slide">
+								<th colspan="11">Базовая информация</th>
+							</tr>
+							<tr>
+								<th>Цена</th>
+								<td><strong>1 339 000</strong></td>
+								<td><strong>1 339 000</strong></td>
+								<td><strong>1 339 000</strong></td>
+								<td><strong>1 339 000</strong></td>
+								<td><strong>1 339 000</strong></td>
+								<td><strong>1 339 000</strong></td>
+								<td><strong>1 339 000</strong></td>
+								<td><strong>1 339 000</strong></td>
+								<td><strong>1 339 000</strong></td>
+								<td><strong>1 339 000</strong></td>
+							</tr>
+							<tr>
+								<th>Объем двигателя</th>
+								<td><strong>1.6</strong></td>
+								<td><strong>1.6</strong></td>
+								<td><strong>1.6</strong></td>
+								<td><strong>1.6</strong></td>
+								<td><strong>1.6</strong></td>
+								<td><strong>1.6</strong></td>
+								<td><strong>1.6</strong></td>
+								<td><strong>1.6</strong></td>
+								<td><strong>1.6</strong></td>
+								<td><strong>1.6</strong></td>
+							</tr>
+							<tr>
+								<th>Мощность, л.с. при об/мин</th>
+								<td>150.5700</td>
+								<td>150.5700</td>
+								<td>150.5700</td>
+								<td>150.5700</td>
+								<td>150.5700</td>
+								<td>150.5700</td>
+								<td>150.5700</td>
+								<td>150.5700</td>
+								<td>150.5700</td>
+								<td>150.5700</td>
+							</tr>
+							<tr>
+								<th>Коробка передач</th>
+								<td>Ручная</td>
+								<td>Ручная</td>
+								<td>Ручная</td>
+								<td>Ручная</td>
+								<td>Ручная</td>
+								<td>Ручная</td>
+								<td>Ручная</td>
+								<td>Ручная</td>
+								<td>Ручная</td>
+								<td>Ручная</td>
+							</tr>
+							<tr>
+								<th>Привод</th>
+								<td>Передний</td>
+								<td>Передний</td>
+								<td>Передний</td>
+								<td>Передний</td>
+								<td>Передний</td>
+								<td>Передний</td>
+								<td>Передний</td>
+								<td>Передний</td>
+								<td>Передний</td>
+								<td>Передний</td>
+							</tr>
+							<tr>
+								<th>Разгон до 100/Макс. скорость</th>
+								<td>9.5/205</td>
+								<td>9.5/205</td>
+								<td>9.5/205</td>
+								<td>9.5/205</td>
+								<td>9.5/205</td>
+								<td>9.5/205</td>
+								<td>9.5/205</td>
+								<td>9.5/205</td>
+								<td>9.5/205</td>
+								<td>9.5/205</td>
+							</tr>
+							<tr>
+								<th>Расход топлива</th>
+								<td>7.4/4.9/5.8</td>
+								<td>7.4/4.9/5.8</td>
+								<td>7.4/4.9/5.8</td>
+								<td>7.4/4.9/5.8</td>
+								<td>7.4/4.9/5.8</td>
+								<td>7.4/4.9/5.8</td>
+								<td>7.4/4.9/5.8</td>
+								<td>7.4/4.9/5.8</td>
+								<td>7.4/4.9/5.8</td>
+								<td>7.4/4.9/5.8</td>
+							</tr>
+							<tr>
+								<th>Рейтинг безопасности</th>
+								<td>н.д.</td>
+								<td>н.д.</td>
+								<td>н.д.</td>
+								<td>н.д.</td>
+								<td>н.д.</td>
+								<td>н.д.</td>
+								<td>н.д.</td>
+								<td>н.д.</td>
+								<td>н.д.</td>
+								<td>н.д.</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="slide main">
+								<th colspan="11"><span>Подробные характеристики</span></th>
+							</tr>
+							<tr class="title">
+								<th colspan="11">Двигатель</th>
+							</tr>
+							<tr>
+								<th>Турбонаддув</th>
+								<td>Турбонаддув</td>
+								<td>Турбонаддув</td>
+								<td>Турбонаддув</td>
+								<td>Турбонаддув</td>
+								<td>Турбонаддув</td>
+								<td>Турбонаддув</td>
+								<td>Турбонаддув</td>
+								<td>Турбонаддув</td>
+								<td>Турбонаддув</td>
+								<td>Турбонаддув</td>
+							</tr>
+							<tr>
+								<th>Норма токсичности</th>
+								<td>Евро 5</td>
+								<td>Евро 5</td>
+								<td>Евро 5</td>
+								<td>Евро 5</td>
+								<td>Евро 5</td>
+								<td>Евро 5</td>
+								<td>Евро 5</td>
+								<td>Евро 5</td>
+								<td>Евро 5</td>
+								<td>Евро 5</td>
+							</tr>
+							<tr>
+								<th>Количество выбросов</th>
+								<td>135</td>
+								<td>135</td>
+								<td>135</td>
+								<td>135</td>
+								<td>135</td>
+								<td>135</td>
+								<td>135</td>
+								<td>135</td>
+								<td>135</td>
+								<td>135</td>
+							</tr>
+							<tr class="title">
+								<th colspan="11">Рулевое управление</th>
+							</tr>
+							<tr>
+								<th>Усилитель</th>
+								<td><a href="#" class="show_modal">Электроусилитель</a></td>
+								<td>Электроусилитель</td>
+								<td><a href="#" class="show_modal">Электроусилитель</a></td>
+								<td>Электроусилитель</td>
+								<td>Электроусилитель</td>
+								<td>Электроусилитель</td>
+								<td>Электроусилитель</td>
+								<td>Электроусилитель</td>
+								<td>Электроусилитель</td>
+								<td>Электроусилитель</td>
+							</tr>
+							<tr>
+								<th>Диаметр разворота, м</th>
+								<td>11.3</td>
+								<td>11.3</td>
+								<td>11.3</td>
+								<td>11.3</td>
+								<td>11.3</td>
+								<td>11.3</td>
+								<td>11.3</td>
+								<td>11.3</td>
+								<td>11.3</td>
+								<td>11.3</td>
+							</tr>
+							<tr class="slide">
+								<th colspan="11">Дополнительное оборудование</th>
+							</tr>
+							<tr class="title">
+								<th colspan="11">Внешнее оборудование</th>
+							</tr>
+							<tr>
+								<th>Адаптивные фары <span class="kvest"><span>Какой-то текст, по мелочи, бывает многстрострочным и философским</span></span> <span class="pin"></span></th>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+							</tr>
+							<tr>
+								<th>Биксеноновые фары <span class="kvest"><span>Какой-то текст, по мелочи, бывает многстрострочным и философским</span></span></th>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+							</tr>
+							<tr>
+								<th>Боковые зеркала с обогревом <span class="pin"></span></th>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+							</tr>
+							<tr class="title">
+								<th colspan="11">Оборудование салона</th>
+							</tr>
+							<tr>
+								<th>Климат-контроль</th>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+								<td><em>+</em></td>
+							</tr>
+							<tr>
+								<th>Кондиционер</th>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+								<td><span>-</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="notification"><strong>Условные обозначения:</strong> "+" 0 стандарт, "-" - отсутствует, "н.д." - нет информации про эту опцию</p>
+			</div>
+				
+		</div><!--foot_in-->
+		
+		<div class="modal">
+			<h6>Электроусилитель руля встречается в следующих моделях:</h6>
+			<ul>
+				<li><a href="#">Ford Focus седан 1.6 MT Trend  -  1 500 000 руб.</a></li>
+				<li><a href="#">Mercedes-Benz S-Класс S 400 HYBRID L  -  1 652 000 руб.</a></li>
+			</ul>
+			<p><a href="#">Еще 26 моделей</a></p>
+		</div>
+			
+		<div class="max_width">
+			<div class="foot_left">
+				<div class="col_in">
+					<p>© 2008 - 2012 AutoNeva.ru</p>
+				</div>
+			</div><!--foot_left-->
+			<div class="foot_right">
+				<div class="col_in">
+					<div class="counter">
+						<a href="#"><img src="images/del/counter1.png" alt="" /></a>
+						<a href="#"><img src="images/del/counter2.png" alt="" /></a>
+						<a href="#"><img src="images/del/counter3.png" alt="" /></a>
+						<a href="#"><img src="images/del/counter4.png" alt="" /></a>
+					</div>
+				</div>
+			</div><!--foot_right-->
+			<div class="clear"></div>
+		</div>
+		
+		<div class="block_srv">
+        	<div class="hint" style="display: none;">
+            	<div class="arr"></div>
+                <p><strong>Volkswagen Passat</strong><br>добавлен к сравнению</p>
+            </div>
+        	<table width="100%">
+            	<tbody><tr>
+                	<td><p><img src="images/bg/add_srv.png" alt=""></p></td>
+                    <td><p>Для сравнения<br>выбрано моделей</p></td>
+                    <td><p class="num">5</p></td>
+                </tr>
+            </tbody></table>
+        </div>
+		
+				<script type="text/javascript">
+					function resize() {
+						$('.comparison .scroll table tbody tr.title th, .comparison .scroll table tbody tr.slide th, .comparison .scroll table thead th .nav').css({'width': $('.scroll').width()+240+'px'});
+					}
+					
+					function addauto() {
+						var addautoarrow = $('.comparison .scroll table thead h5').offset().top - $('.comparison > div .addauto').offset().top;
+						$('.comparison > div .addauto .arrow').css({'top': addautoarrow+'px'});
+					}
+					$('.comparison > div .addauto').append('<span class="arrow"></span>');
+					$('.comparison > div .addauto').append('<span class="close"></span>');
+					$('.modal').append('<span class="arrow"></span>');
+					
+					resize();
+					addauto();
+					
+					$(window).resize(function() {
+						resize();
+					});
+
+					var ft = $('.comparison .scroll').offset().top;
+					var thead = $('.scroll table td').height();
+					//$('.scroll table thead th').css({'height': thead+'px'});
+					$('.comparison table').css({'padding-top': thead+'px'});
+
+					$(window).scroll(function () {
+						if ( $(window).scrollTop() > ft ) {
+							var pos = $(window).scrollTop()-ft;
+							$('.scroll table thead, .comparison .toleft, .comparison .toright').css({'top': pos+'px'});
+						}
+						else {
+							$('.scroll table thead, .comparison .toleft, .comparison .toright').css({'top': '0'});
+						}
+						if ( $(window).scrollTop() > ft-33 ) {
+							$('.comparison > div .addauto').css({'position': 'fixed', 'top': '0', 'left': $('.comparison .scroll table thead h5').offset().left+200+'px'});
+							addauto();
+						}
+						else {
+							$('.comparison > div .addauto').css({'position': 'absolute', 'top': '-33px', 'left': '210px'});
+							addauto();
+						}
+					});
+					
+					$('.scroll table').width($('.scroll table thead td').size()*180);
+					
+					var scrollposition = 0;
+					
+					$('.scroll').scroll(function() {
+						var size = $('.scroll table thead td').size();
+						$('.scroll table th').css({'left': -$('.scroll table').position().left+1+'px'});
+						$('.scroll table thead td').each(function() {
+							var xxx = $(this).position().left + $('.scroll table').position().left;
+						});
+					});
+					
+					$('.comparison table tbody tr span.pin').bind('click', function() {
+						$(this).parents('tr').toggleClass('active');
+						return false;
+					});
+					
+					$('.comparison table tbody tr.slide.main').bind('click', function() {
+						$(this).siblings().slideToggle(0);
+						$(this).toggleClass('passive');
+						return false;
+					});
+					
+					$('.comparison .toleft').bind('click', function() {
+						if ( scrollposition > 0 ) {
+							scrollposition = scrollposition - 1;
+							$('.scroll').animate({scrollLeft: scrollposition*180}, 500);
+							$('.modal').hide();
+						}
+						return false;
+					}).click();
+					
+					$('.comparison .toright').bind('click', function() {
+						if ( scrollposition*180 < $('.comparison .scroll table').width() - ($('.scroll').width()) )  {
+							scrollposition = scrollposition + 1;
+							$('.scroll').animate({scrollLeft: scrollposition*180}, 500);
+							$('.modal').hide();
+						}
+						return false;
+					});
+					
+					$('.comparison .scroll table thead h5 a').bind('click', function() {
+						$('.comparison > div .addauto').slideToggle(0);
+						$(this).parent().toggleClass('active');
+						addauto();
+						return false;
+					});
+					
+					$('.comparison > div .addauto .close').bind('click', function() {
+						$(this).parent().hide();
+						$('.comparison .scroll table thead h5').removeClass('active');
+						return false;
+					});
+					
+					$('a.show_modal').bind('click', function() {
+						$('.modal').show().css({
+							'left': $(this).offset().left+$(this).width()/2+'px',
+							'top': $(this).offset().top+'px'
+						});
+						return false;
+					});
+
+					$('.root').click(function() {
+						$('.comparison > div .addauto, .modal').hide();
+						$('.comparison .scroll table thead h5, .modal ul li').removeClass('active');
+					});
+					
+					$('.comparison > div .addauto, .modal, a.show_modal').click(function(event){
+						event.stopPropagation();
+					});
+					
+					$('.modal ul li a').bind('click', function() {
+						$(this).parent().toggleClass('active');
+						return false;
+					});
+				</script>
+		
+	</div>
+	</div><!--footer-->
+</body>
+</html>
