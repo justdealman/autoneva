@@ -600,7 +600,7 @@
 							</tr>
 							<tr>
 								<th>Коробка передач</th>
-								<td>Ручная</td>
+								<td>Ручная ручная ручная ручная ручная ручная ручная ручная ручная ручная ручная ручная ручная ручная</td>
 								<td>Ручная</td>
 								<td>Ручная</td>
 								<td>Ручная</td>
@@ -612,7 +612,7 @@
 								<td>Ручная</td>
 							</tr>
 							<tr>
-								<th>Привод</th>
+								<th>Привод привод привод привод привод привод привод привод привод привод</th>
 								<td>Передний</td>
 								<td>Передний</td>
 								<td>Передний</td>
@@ -980,6 +980,15 @@
 					$('.modal ul li a').bind('click', function() {
 						$(this).parent().toggleClass('active');
 						return false;
+					});
+					
+					$('.comparison .scroll table tbody tr').each(function() {
+						var max = 0;
+						$(this).find('th, td').each(function() {
+							var h = $(this).height(); 
+							max = h > max ? h : max;
+						});
+						$(this).find('th, td').height(max);
 					});
 				</script>
 		

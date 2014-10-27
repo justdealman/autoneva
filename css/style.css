@@ -1837,28 +1837,28 @@ div.bubble p {
 	position:absolute;
 	left:-259px;
 	width:240px;
-	height:17px;
+	min-height:17px;
 	color:#363636;
 	font-size:14px;
 	line-height:17px;
 	font-weight:normal;
 	font-family:'Arial Narrow', sans-serif;
 	text-align:left;
-	white-space:nowrap;
+	white-space:normal;
 	padding:4px 10px 5px;
 	background:#eaf5fa;
 	border-bottom:1px solid #ffffff;
 }
 .comparison .scroll table tbody td {
 	width:160px;
-	height:17px;
+	min-height:17px;
 	color:#656565;
 	font-size:12px;
 	line-height:17px;
 	font-weight:normal;
 	text-align:center;
-	white-space:nowrap;
-	vertical-align:middle;
+	white-space:normal;
+	vertical-align:top;
 	padding:4px 10px 5px;
 	background:#eaf5fa;
 	border-bottom:1px solid #ffffff;
